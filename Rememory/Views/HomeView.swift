@@ -21,6 +21,16 @@ struct HomeView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color(.systemBackground))
+            
+            NavigationLink(destination: FlashcardListView()) {
+                Text("Karteikarten anzeigen")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.accentColor.opacity(0.8))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .padding(.horizontal)
         }
     }
 }
