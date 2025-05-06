@@ -3,6 +3,10 @@ import SwiftUI
 struct FlashcardDetailView: View {
     let flashcard: Flashcard
 
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    @State private var showDeleteConfirmation = false
+
     var body: some View {
         Form(content: {
             Section(header: Text("Frage")) {
@@ -23,6 +27,22 @@ struct FlashcardDetailView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: 200)
+                }
+            }
+            Section {
+                NavigationLink("Bearbeiten") {
+                    EditFlashcardView(flashcard: flashcard)
+                }
+
+                Button("Löschen", role: .destructive) {
+                    showDeleteConfirmation = true
+                }
+                .confirmationDialog("Karteikarte wirklich löschen?", isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
+                    Button("Löschen", role: .destructive) {
+                        modelContext.delete(flashcard)
+                        dismiss()
+                    }
+                    Button("Abbrechen", role: .cancel) {}
                 }
             }
         })
