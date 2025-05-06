@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Rememory
-//
-//  Created by Mert Akdemir on 06.05.25.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -55,7 +48,7 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
-}
+//#Preview {
+//    ContentView()
+//        .modelContainer(for: Item.self, inMemory: true)
+//}

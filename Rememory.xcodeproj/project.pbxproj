@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FC1AFA5B2DCA19280093047B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FC1AFA5A2DCA19220093047B /* .gitignore */; };
+		FC1AFA5D2DCA19390093047B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FC1AFA5C2DCA19300093047B /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FC1AFA3E2DCA148C0093047B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		FC1AFA2E2DCA148A0093047B /* Rememory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rememory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1AFA3D2DCA148C0093047B /* RememoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RememoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1AFA472DCA148C0093047B /* RememoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RememoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1AFA5A2DCA19220093047B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FC1AFA5C2DCA19300093047B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		FC1AFA252DCA148A0093047B = {
 			isa = PBXGroup;
 			children = (
+				FC1AFA5A2DCA19220093047B /* .gitignore */,
+				FC1AFA5C2DCA19300093047B /* README.md */,
 				FC1AFA302DCA148A0093047B /* Rememory */,
 				FC1AFA402DCA148C0093047B /* RememoryTests */,
 				FC1AFA4A2DCA148C0093047B /* RememoryUITests */,
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1AFA5D2DCA19390093047B /* README.md in Resources */,
+				FC1AFA5B2DCA19280093047B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
